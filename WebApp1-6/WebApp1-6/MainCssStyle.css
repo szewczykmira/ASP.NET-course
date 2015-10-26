@@ -1,0 +1,8 @@
+﻿body {
+background-color: darkolivegreen;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrong_input {
+    color: indianred;
+}
