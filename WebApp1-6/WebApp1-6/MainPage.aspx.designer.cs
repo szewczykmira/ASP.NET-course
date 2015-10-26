@@ -58,6 +58,15 @@ namespace WebApp1_6 {
         protected global::System.Web.UI.WebControls.TextBox zajecia;
         
         /// <summary>
+        /// NumerListy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox NumerListy;
+        
+        /// <summary>
         /// TextBox1 control.
         /// </summary>
         /// <remarks>

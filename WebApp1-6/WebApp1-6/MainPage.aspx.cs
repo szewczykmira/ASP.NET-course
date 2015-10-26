@@ -12,18 +12,6 @@ namespace WebApp1_6
         protected void Page_Load(object sender, EventArgs e)
         {
         }
-        protected void Validate(object sender, EventArgs a)
-        {
-            TextBox Box = (TextBox) sender;
-            string Value = Box.Text;
-            int Val;
-            if (!int.TryParse(Value, out Val))
-            {
-                Box.Style.Add("color", "red");
-            }
-            else {
-                Box.Style.Remove("color");
-            }
-        }
+        
     }
 }
