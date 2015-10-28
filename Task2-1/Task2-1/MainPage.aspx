@@ -7,11 +7,11 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" method="get">
     <div>
         What you are looking for?
         <input type="text" id="input" runat="server" />
-        <asp:Button OnClick="sendGet" runat="server" Text="Search"/>
+        <input type="submit" value="Search" />
     </div>
     </form>
 </body>

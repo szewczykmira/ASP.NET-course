@@ -13,11 +13,7 @@ namespace Task2_1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write(Request.QueryString["param"]);
-        }
-        protected void sendGet(object sender, EventArgs e)
-        {
-            Response.Redirect("MainPage.aspx?param=" + input.Value);
+            Response.Write(Request.QueryString["input"]);
         }
     }
 }
