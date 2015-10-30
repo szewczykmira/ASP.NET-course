@@ -13,5 +13,12 @@
         <asp:Button Text="Read a cookie" runat="server" ID="read" OnClick="ReadCookie" /><br />
         <asp:Button Text="Delete cookie!" runat="server" ID="delete" OnClick="DeleteCookies"/>
     </form>
+    <div>
+        <h4>Jak sprawdzić czy przeglądarka obsługuje ciastka</h4>
+        <ul>
+            <li>Naiwnie - można wejść na <a href="https://www.whatismybrowser.com/detect/are-cookies-enabled">tę stronę</a> lub poszukać w ustawieniach przeglądarki</li>
+            <li>Mniej naiwna wersja to wysłać cookie a następnie sprawdzić czy ono istnieje</li>
+        </ul>
+    </div>
 </body>
 </html>
