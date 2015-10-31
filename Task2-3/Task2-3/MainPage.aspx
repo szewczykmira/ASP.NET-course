@@ -12,7 +12,8 @@
     </div>
     <form runat="server">
         <asp:Button ID="set" runat="server" OnClick="AddHeader" Text="Dodaj do nagłówka" UseSubmitBehavior="false"/>
-        <asp:Button ID="get" runat="server" OnClick="ReadHeader" Text="Przeczytaj nagłówek" UseSubmitBehavior="false" />  
+        <asp:Button ID="get" runat="server" OnClick="ReadHeader" Text="Przeczytaj nagłówek" UseSubmitBehavior="false" />
+        <asp:Button ID="nav" runat="server" OnClick="Navigate" Text="Mapuj ścieżkę" />
     </form>
 </body>
 </html>
