@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app_offline.htm" />
     <Content Include="MapFolder\MappedSite.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">

@@ -11,7 +11,6 @@ namespace Task2_3.MapFolder
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
     }
 }
