@@ -27,6 +27,7 @@ namespace Task2_7
             //Create Child elements
             xWriter.WriteElementString("nazwa", Plik.PostedFile.FileName);
             xWriter.WriteElementString("rozmiar", Plik.PostedFile.ContentLength.ToString());
+            xWriter.WriteElementString("sygnatura", (Plik.PostedFile.ContentLength % 0xFFFF).ToString());
             xWriter.WriteEndElement();
 
             //End writing top element and XML document
