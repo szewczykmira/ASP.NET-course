@@ -13,15 +13,6 @@ namespace WebApp1_6 {
     public partial class declaration {
         
         /// <summary>
-        /// Imie control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTableCell Imie;
-        
-        /// <summary>
         /// Zajecia control.
         /// </summary>
         /// <remarks>
@@ -29,6 +20,15 @@ namespace WebApp1_6 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableCell Zajecia;
+        
+        /// <summary>
+        /// Imie control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell Imie;
         
         /// <summary>
         /// Lista control.
@@ -137,5 +137,14 @@ namespace WebApp1_6 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTableCell td10;
+        
+        /// <summary>
+        /// Suma control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell Suma;
     }
 }

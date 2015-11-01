@@ -25,6 +25,12 @@ namespace WebApp1_6
             td8.InnerText = Request.Form["TextBox8"];
             td9.InnerText = Request.Form["TextBox9"];
             td10.InnerText = Request.Form["TextBox10"];
+            int value = 0;
+            for(int i=1; i<11; i++)
+            {
+                value += int.Parse(Request.Form["TextBox" + i.ToString()]);
+            }
+            Suma.InnerText = value.ToString();
         }
     }
 }

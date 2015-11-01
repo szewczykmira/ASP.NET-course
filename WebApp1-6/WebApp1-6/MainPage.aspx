@@ -56,7 +56,7 @@
         <div>Nazwisko</div>
         <asp:TextBox ID="Nazwisko" runat="server" />
         <div>Data:</div>
-        <asp:Calendar ID="data" runat="server" />
+        <asp:TextBox ID="data" runat="server" />
         <div>Zajecia:</div>
         <asp:TextBox ID="zajecia" runat="server" />
         <div>Nr Listy:</div>
