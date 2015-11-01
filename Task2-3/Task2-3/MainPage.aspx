@@ -14,6 +14,7 @@
         <asp:Button ID="set" runat="server" OnClick="AddHeader" Text="Dodaj do nagłówka" UseSubmitBehavior="false"/>
         <asp:Button ID="get" runat="server" OnClick="ReadHeader" Text="Przeczytaj nagłówek" UseSubmitBehavior="false" />
         <asp:Button ID="nav" runat="server" OnClick="Navigate" Text="Mapuj ścieżkę" />
+        <a href="MapFolder/MappedSite.aspx">Dalsza część zadania + zadanie 6</a>
     </form>
 </body>
 </html>

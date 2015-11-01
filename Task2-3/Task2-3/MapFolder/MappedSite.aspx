@@ -15,7 +15,7 @@
                 HttpContext.Current zwraca aktualny HttpContext. Używając tej właściwości można dostać się do aktualnych obiektów Request,  Response, Session i Application.
             </dd>
             <dt>Przechowywanie referencji na stronę aktualnie przetwarzaną w potoku przetwarzania</dt>
-            <dd></dd>
+            <dd>PageInstrumentation</dd>
         </dl>
         <h3>Zadanie 6</h3>
         <dl>
