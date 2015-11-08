@@ -9,8 +9,10 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <span>DropDownList binded with DataSet</span>
         <asp:DropDownList ID="DropDown" runat="server" DataTextField="NAME" DataValueField="ID" />
-            
+        <span>DropDownList binded with Array</span>
+        <asp:DropDownList ID="DropDownArray" runat="server" />
     </div>
     </form>
 </body>

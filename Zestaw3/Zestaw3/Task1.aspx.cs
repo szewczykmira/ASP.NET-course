@@ -36,6 +36,13 @@ namespace Zestaw3
             DropDown.DataSource = myDataSet;
             DropDown.DataBind();
 
+            //Drugi DropDownList
+            List<String> valueList = new List<string>();
+            valueList.Add("Value 1");
+            valueList.Add("Value 2");
+            DropDownArray.DataSource = valueList;
+            DropDownArray.DataBind();
+
         }
     }
 }
