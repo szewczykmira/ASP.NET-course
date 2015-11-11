@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Contacts>
+  <contact name="John" lastName="Smith" />
+  <contact name="Joan" lastName="Doe" />
+  <contact name="Ant" lastName="Z" />
+</Contacts>
