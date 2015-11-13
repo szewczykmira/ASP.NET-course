@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReadedBooks>
+  <Book name="Lord of The Ring" year="1956" author="J. R. R. Tolkien" id="1"></Book>
+  <Book name="Hobbit" year ="1938" author="J. R. R. Tolkien" id="2"></Book>
+  <Book name="Zbieracz Burz" year="2010" author="M.L. Kossakowska" id="3"></Book>
+  <Book name="Otchłań" year="2015" author="Robert Szmidt" id="4"></Book>
+  <Book name="Harry Potter" year="1997" author="J.K. Rowling" id="5"></Book>
+  <Book name="Wiedźmin" year="2001" author="A. Sapkowski" id="6"></Book>
+</ReadedBooks>
