@@ -16,10 +16,28 @@ namespace Zestaw3
 
         protected void BookGrid_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            int index = Convert.ToInt32(e.CommandArgument);
-            GridViewRow row = BookGrid.Rows[index];
+            
+            if (e.CommandName == "GetId")
+            {
+                int index = Convert.ToInt32(e.CommandArgument);
+                GridViewRow row = BookGrid.Rows[index];
+                Response.Write(row.Cells[0].Text);
+            }
+            if (e.CommandName == "Delete")
+            {
+                Response.Write("Dzieje sie");
+            }
+        }
 
-            Response.Write(row.Cells[0].Text);
+        protected void BookGrid_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                LinkButton l = (LinkButton)e.Row.FindControl("LinkButton1");
+                l.Attributes.Add("onclick", "javascript:return " +
+                "confirm('Are you sure you want to delete this record " +
+                DataBinder.Eval(e.Row.DataItem, "ID") + "')");
+            }
 
         }
     }
