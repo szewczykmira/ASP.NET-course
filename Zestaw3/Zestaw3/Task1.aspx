@@ -9,10 +9,14 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <span>DropDownList binded with DataSet</span>
-        <asp:DropDownList ID="DropDown" runat="server" DataTextField="NAME" DataValueField="ID" />
-        <span>DropDownList binded with Array</span>
-        <asp:DropDownList ID="DropDownArray" runat="server" />
+        <span>DropDownList binded with DataSet</span><br />
+        <asp:DropDownList ID="DropDown" runat="server" DataTextField="NAME" DataValueField="ID" /><br />
+        <span>DropDownList binded with Array</span><br />
+        <asp:DropDownList ID="DropDownArray" runat="server" /><br />
+
+        Przykład formatowania:<br />
+        DropDownList1.DataTextFormatString = "{0} - {1}";<br />
+DropDownList1.DataTextField = "Id,StudentName";
     </div>
     </form>
 </body>

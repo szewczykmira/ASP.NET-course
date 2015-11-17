@@ -15,7 +15,7 @@
             <asp:BoundField HeaderText="Title" DataField="name" />
             <asp:BoundField HeaderText="Author" DataField="author" />
             <asp:BoundField HeaderText="Published" DataField="year" />
-            <asp:ButtonField HeaderText="Actions" ButtonType="Button" runat="server" Text="I am button" CommandName="GetId"/>
+            <asp:ButtonField HeaderText="Actions" ButtonType="Image" runat="server" Text="I am button" CommandName="GetId"/>
             <asp:TemplateField HeaderText="Select">
                 <ItemTemplate>
                     <asp:LinkButton ID="LinkButton1" CommandArgument='<%# Eval("id") %>' CommandName="Delete" runat="server"> Delete</asp:LinkButton>
