@@ -4,63 +4,38 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<h2 class="page-header">Index</h2>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ClassDate)
+           <!-- @Html.DisplayNameFor(model => model.LastName) -->
+            Last Name
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ClassName)
+            First Name
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ClassNo)
+            Date
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Exercise1)
+            Classes
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Exercise10)
+            Classes Number
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Exercise2)
+            Actions
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Exercise3)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Exercise4)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Exercise5)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Exercise6)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Exercise7)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Exercise8)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Exercise9)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LastName)
-        </th>
-        <th></th>
     </tr>
     
 @foreach (var item in Model) {
     <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.ClassDate)
         </td>
@@ -70,42 +45,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.ClassNo)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Exercise1)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Exercise10)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Exercise2)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Exercise3)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Exercise4)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Exercise5)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Exercise6)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Exercise7)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Exercise8)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Exercise9)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FirstName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LastName)
-        </td>
+        
         <td>
             <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
             <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
