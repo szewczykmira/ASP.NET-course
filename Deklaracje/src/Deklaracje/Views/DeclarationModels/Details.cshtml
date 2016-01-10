@@ -1,0 +1,108 @@
+@model Deklaracje.Models.DeclarationModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DeclarationModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClassDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClassName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassNo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClassNo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercise1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercise10)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise10)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercise2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercise3)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise3)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercise4)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise4)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercise5)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise5)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercise6)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise6)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercise7)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise7)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercise8)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise8)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Exercise9)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise9)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+    </dl>
+</div>
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</p>
