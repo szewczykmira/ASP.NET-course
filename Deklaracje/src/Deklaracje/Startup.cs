@@ -96,7 +96,7 @@ namespace Deklaracje
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=DeclarationModelController}/{action=Index}/{id?}");
+                    template: "{controller=DeclarationModels}/{action=Index}/{id?}");
             });
         }
 
