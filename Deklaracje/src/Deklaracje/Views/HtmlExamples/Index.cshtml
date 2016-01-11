@@ -1,0 +1,64 @@
+﻿@model Deklaracje.Models.DeclarationModel
+@{
+}
+<h2 class="page-header">Zadanie 3</h2>
+<div>
+    <h4>ActionLink:</h4>
+    <p>@Html.ActionLink("Zadanie2", "Index", "ParseFile")</p>
+</div>
+<div>
+    <h4>
+        BeginForm:
+    </h4>
+    <p>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true)
+
+            <fieldset>
+                <legend>Movie</legend>
+
+                @Html.HiddenFor(model => model.ID)
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+        </fieldset>
+        }
+    </p>
+</div>
+<div>
+    <h4>CheckBox:</h4>
+    <p>@Html.CheckBox("some checkbox")</p>
+</div>
+<div>
+    <h4>DropdownList:</h4>
+    <p>
+        @Html.DropDownList("Country", ViewData["Countries"] as SelectList, new { @class = "form-control" })
+    </p>
+</div>
+<div>
+    <h4>Password:</h4>
+    <p>
+        @Html.Password("Secret word")
+    </p>
+</div>
+<div>
+    <h4>Radio Button</h4>
+    <p>
+        @Html.RadioButton("Type", 1) A
+        @Html.RadioButton("Type", 2) B
+    </p>
+</div>
+<div>
+    <h4>TextBox</h4>
+    <p>
+        @Html.TextBoxFor(model => model.FirstName)
+    </p>
+</div>
+<div>
+    <h4>TextArea</h4>
+    <p>
+        @Html.TextAreaFor(model => model.LastName)
+    </p>
+</div>
