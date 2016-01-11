@@ -4,105 +4,105 @@
     ViewData["Title"] = "Details";
 }
 
-<h2>Details</h2>
+<h2 class="page-header">Details</h2>
 
 <div>
-    <h4>DeclarationModel</h4>
-    <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.ClassDate)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.ClassDate)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.ClassName)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.ClassName)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.ClassNo)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.ClassNo)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Exercise1)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Exercise1)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Exercise10)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Exercise10)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Exercise2)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Exercise2)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Exercise3)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Exercise3)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Exercise4)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Exercise4)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Exercise5)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Exercise5)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Exercise6)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Exercise6)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Exercise7)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Exercise7)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Exercise8)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Exercise8)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Exercise9)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Exercise9)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.FirstName)
+            First Name
         </dt>
         <dd>
             @Html.DisplayFor(model => model.FirstName)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.LastName)
+            Last Name
         </dt>
         <dd>
             @Html.DisplayFor(model => model.LastName)
         </dd>
+        <dt>
+            <!-- @Html.DisplayNameFor(model => model.ClassDate) -->
+            Class Date
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClassDate)
+        </dd>
+        <dt>
+            Class Name
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClassName)
+        </dd>
+        <dt>
+            Class Number
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClassNo)
+        </dd>
+        <dt>
+            Exercise 1
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise1)
+        </dd>
+        <dt>
+            Exercise 2
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise2)
+        </dd>
+        <dt>
+            Exercise 3
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise3)
+        </dd>
+        <dt>
+            Exercise 4
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise4)
+        </dd>
+        <dt>
+            Exercise 5
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise5)
+        </dd>
+        <dt>
+            Exercise 6
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise6)
+        </dd>
+        <dt>
+            Exercise 7
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise7)
+        </dd>
+        <dt>
+            Exercise 8
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise8)
+        </dd>
+        <dt>
+            Exercise 9
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise9)
+        </dd>
+        <dt>
+            Exercise 10
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Exercise10)
+        </dd>
+        
     </dl>
 </div>
 <p>
-    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.ID" class="btn btn-primary">Edit</a>
+    <a asp-action="Delete" asp-route-id="@Model.ID" class="btn btn-danger">Delete</a>
 </p>
