@@ -1792,6 +1792,21 @@
           "lib/net451/Microsoft.Extensions.WebEncoders.Core.dll": {}
         }
       },
+      "Microsoft.Framework.Logging.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Logging.Abstractions.dll": {}
+        }
+      },
       "Microsoft.Net.Http.Headers/1.0.0-rc1-final": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1805,6 +1820,40 @@
         },
         "runtime": {
           "lib/net451/Microsoft.Net.Http.Headers.dll": {}
+        }
+      },
+      "Microsoft.Net.Http.Server/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta5",
+          "Microsoft.Net.WebSockets": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Net.Http.Server.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Net.Http.Server.dll": {}
+        }
+      },
+      "Microsoft.Net.WebSockets/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.Net.WebSockets.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Net.WebSockets.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.BrowserLink.Loader/14.0.0-rc1-final": {
@@ -3618,6 +3667,25 @@
           "lib/dotnet5.4/Microsoft.Extensions.WebEncoders.Core.dll": {}
         }
       },
+      "Microsoft.Framework.Logging.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10-beta-23019",
+          "System.Collections.Concurrent": "4.0.10-beta-23019",
+          "System.Globalization": "4.0.10-beta-23019",
+          "System.Linq": "4.0.0-beta-23019",
+          "System.Reflection": "4.0.10-beta-23019",
+          "System.Runtime": "4.0.20-beta-23019",
+          "System.Runtime.Extensions": "4.0.10-beta-23019",
+          "System.Runtime.InteropServices": "4.0.20-beta-23019"
+        },
+        "compile": {
+          "lib/dotnet/Microsoft.Framework.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/Microsoft.Framework.Logging.Abstractions.dll": {}
+        }
+      },
       "Microsoft.Net.Http.Headers/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -3634,6 +3702,52 @@
         },
         "runtime": {
           "lib/dotnet5.4/Microsoft.Net.Http.Headers.dll": {}
+        }
+      },
+      "Microsoft.Net.Http.Server/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta5",
+          "Microsoft.Net.WebSockets": "1.0.0-beta5",
+          "Microsoft.Win32.Primitives": "4.0.0-beta-23019",
+          "System.Diagnostics.Debug": "4.0.10-beta-23019",
+          "System.IO.FileSystem": "4.0.0-beta-23019",
+          "System.Security.Claims": "4.0.0-beta-23019",
+          "System.Security.Cryptography.X509Certificates": "4.0.0-beta-23019",
+          "System.Security.Principal.Windows": "4.0.0-beta-23019",
+          "System.Threading.Overlapped": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.Net.Http.Server.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.Net.Http.Server.dll": {}
+        }
+      },
+      "Microsoft.Net.WebSockets/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10-beta-23019",
+          "System.Diagnostics.Contracts": "4.0.0-beta-23019",
+          "System.Diagnostics.Tools": "4.0.0-beta-23019",
+          "System.IO": "4.0.10-beta-23019",
+          "System.Linq": "4.0.0-beta-23019",
+          "System.Net.Primitives": "4.0.10-beta-23019",
+          "System.Net.WebSockets": "4.0.0-beta-23019",
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime.Extensions": "4.0.10-beta-23019",
+          "System.Security.Cryptography.Hashing.Algorithms": "4.0.0-beta-23019",
+          "System.Text.Encoding.Extensions": "4.0.10-beta-23019",
+          "System.Threading": "4.0.10-beta-23019",
+          "System.Threading.Tasks": "4.0.10-beta-23019",
+          "System.Threading.ThreadPool": "4.0.10-beta-23019",
+          "System.Threading.Timer": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.Net.WebSockets.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.Net.WebSockets.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.BrowserLink.Loader/14.0.0-rc1-final": {
@@ -4519,6 +4633,53 @@
           "ref/dotnet5.1/System.Security.Cryptography.Encoding.dll": {}
         }
       },
+      "System.Security.Cryptography.Encryption/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.Globalization": "4.0.0-beta-23019",
+          "System.IO": "4.0.0-beta-23019",
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.0-beta-23019",
+          "System.Threading.Tasks": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Security.Cryptography.Encryption.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Security.Cryptography.Encryption.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Hashing/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0-beta-23019",
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Security.Cryptography.Hashing.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Security.Cryptography.Hashing.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Hashing.Algorithms/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.0-beta-23019",
+          "System.Runtime.InteropServices": "4.0.0-beta-23019",
+          "System.Security.Cryptography.Encryption": "4.0.0-beta-23019",
+          "System.Security.Cryptography.Hashing": "4.0.0-beta-23019",
+          "System.Security.Cryptography.RandomNumberGenerator": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Security.Cryptography.Hashing.Algorithms.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Security.Cryptography.Hashing.Algorithms.dll": {}
+        }
+      },
       "System.Security.Cryptography.Primitives/4.0.0-beta-23516": {
         "type": "package",
         "dependencies": {
@@ -4535,6 +4696,21 @@
         },
         "runtime": {
           "lib/dotnet5.4/System.Security.Cryptography.Primitives.dll": {}
+        }
+      },
+      "System.Security.Cryptography.RandomNumberGenerator/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.0-beta-23019",
+          "System.Runtime.InteropServices": "4.0.0-beta-23019",
+          "System.Security.Cryptography.Encryption": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Security.Cryptography.RandomNumberGenerator.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Security.Cryptography.RandomNumberGenerator.dll": {}
         }
       },
       "System.Security.Cryptography.X509Certificates/4.0.0-beta-23516": {
@@ -6569,6 +6745,21 @@
           "lib/net451/Microsoft.Extensions.WebEncoders.Core.dll": {}
         }
       },
+      "Microsoft.Framework.Logging.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Logging.Abstractions.dll": {}
+        }
+      },
       "Microsoft.Net.Http.Headers/1.0.0-rc1-final": {
         "type": "package",
         "frameworkAssemblies": [
@@ -6582,6 +6773,40 @@
         },
         "runtime": {
           "lib/net451/Microsoft.Net.Http.Headers.dll": {}
+        }
+      },
+      "Microsoft.Net.Http.Server/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta5",
+          "Microsoft.Net.WebSockets": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Net.Http.Server.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Net.Http.Server.dll": {}
+        }
+      },
+      "Microsoft.Net.WebSockets/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.Net.WebSockets.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Net.WebSockets.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.BrowserLink.Loader/14.0.0-rc1-final": {
@@ -8628,6 +8853,21 @@
           "lib/net451/Microsoft.Extensions.WebEncoders.Core.dll": {}
         }
       },
+      "Microsoft.Framework.Logging.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Logging.Abstractions.dll": {}
+        }
+      },
       "Microsoft.Net.Http.Headers/1.0.0-rc1-final": {
         "type": "package",
         "frameworkAssemblies": [
@@ -8641,6 +8881,40 @@
         },
         "runtime": {
           "lib/net451/Microsoft.Net.Http.Headers.dll": {}
+        }
+      },
+      "Microsoft.Net.Http.Server/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta5",
+          "Microsoft.Net.WebSockets": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Net.Http.Server.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Net.Http.Server.dll": {}
+        }
+      },
+      "Microsoft.Net.WebSockets/1.0.0-beta5": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.Net.WebSockets.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Net.WebSockets.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.BrowserLink.Loader/14.0.0-rc1-final": {
@@ -10457,6 +10731,25 @@
           "lib/dotnet5.4/Microsoft.Extensions.WebEncoders.Core.dll": {}
         }
       },
+      "Microsoft.Framework.Logging.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10-beta-23019",
+          "System.Collections.Concurrent": "4.0.10-beta-23019",
+          "System.Globalization": "4.0.10-beta-23019",
+          "System.Linq": "4.0.0-beta-23019",
+          "System.Reflection": "4.0.10-beta-23019",
+          "System.Runtime": "4.0.20-beta-23019",
+          "System.Runtime.Extensions": "4.0.10-beta-23019",
+          "System.Runtime.InteropServices": "4.0.20-beta-23019"
+        },
+        "compile": {
+          "lib/dotnet/Microsoft.Framework.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/Microsoft.Framework.Logging.Abstractions.dll": {}
+        }
+      },
       "Microsoft.Net.Http.Headers/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -10473,6 +10766,52 @@
         },
         "runtime": {
           "lib/dotnet5.4/Microsoft.Net.Http.Headers.dll": {}
+        }
+      },
+      "Microsoft.Net.Http.Server/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta5",
+          "Microsoft.Net.WebSockets": "1.0.0-beta5",
+          "Microsoft.Win32.Primitives": "4.0.0-beta-23019",
+          "System.Diagnostics.Debug": "4.0.10-beta-23019",
+          "System.IO.FileSystem": "4.0.0-beta-23019",
+          "System.Security.Claims": "4.0.0-beta-23019",
+          "System.Security.Cryptography.X509Certificates": "4.0.0-beta-23019",
+          "System.Security.Principal.Windows": "4.0.0-beta-23019",
+          "System.Threading.Overlapped": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.Net.Http.Server.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.Net.Http.Server.dll": {}
+        }
+      },
+      "Microsoft.Net.WebSockets/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10-beta-23019",
+          "System.Diagnostics.Contracts": "4.0.0-beta-23019",
+          "System.Diagnostics.Tools": "4.0.0-beta-23019",
+          "System.IO": "4.0.10-beta-23019",
+          "System.Linq": "4.0.0-beta-23019",
+          "System.Net.Primitives": "4.0.10-beta-23019",
+          "System.Net.WebSockets": "4.0.0-beta-23019",
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime.Extensions": "4.0.10-beta-23019",
+          "System.Security.Cryptography.Hashing.Algorithms": "4.0.0-beta-23019",
+          "System.Text.Encoding.Extensions": "4.0.10-beta-23019",
+          "System.Threading": "4.0.10-beta-23019",
+          "System.Threading.Tasks": "4.0.10-beta-23019",
+          "System.Threading.ThreadPool": "4.0.10-beta-23019",
+          "System.Threading.Timer": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.Net.WebSockets.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.Net.WebSockets.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.BrowserLink.Loader/14.0.0-rc1-final": {
@@ -11862,6 +12201,53 @@
           "ref/dotnet5.1/System.Security.Cryptography.Encoding.dll": {}
         }
       },
+      "System.Security.Cryptography.Encryption/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.Globalization": "4.0.0-beta-23019",
+          "System.IO": "4.0.0-beta-23019",
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.0-beta-23019",
+          "System.Threading.Tasks": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Security.Cryptography.Encryption.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Security.Cryptography.Encryption.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Hashing/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0-beta-23019",
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Security.Cryptography.Hashing.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Security.Cryptography.Hashing.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Hashing.Algorithms/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.0-beta-23019",
+          "System.Runtime.InteropServices": "4.0.0-beta-23019",
+          "System.Security.Cryptography.Encryption": "4.0.0-beta-23019",
+          "System.Security.Cryptography.Hashing": "4.0.0-beta-23019",
+          "System.Security.Cryptography.RandomNumberGenerator": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Security.Cryptography.Hashing.Algorithms.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Security.Cryptography.Hashing.Algorithms.dll": {}
+        }
+      },
       "System.Security.Cryptography.Primitives/4.0.0-beta-23516": {
         "type": "package",
         "dependencies": {
@@ -11878,6 +12264,21 @@
         },
         "runtime": {
           "lib/dotnet5.4/System.Security.Cryptography.Primitives.dll": {}
+        }
+      },
+      "System.Security.Cryptography.RandomNumberGenerator/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.0-beta-23019",
+          "System.Runtime.InteropServices": "4.0.0-beta-23019",
+          "System.Security.Cryptography.Encryption": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Security.Cryptography.RandomNumberGenerator.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Security.Cryptography.RandomNumberGenerator.dll": {}
         }
       },
       "System.Security.Cryptography.X509Certificates/4.0.0-beta-23516": {
@@ -13682,6 +14083,25 @@
           "lib/dotnet5.4/Microsoft.Extensions.WebEncoders.Core.dll": {}
         }
       },
+      "Microsoft.Framework.Logging.Abstractions/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10-beta-23019",
+          "System.Collections.Concurrent": "4.0.10-beta-23019",
+          "System.Globalization": "4.0.10-beta-23019",
+          "System.Linq": "4.0.0-beta-23019",
+          "System.Reflection": "4.0.10-beta-23019",
+          "System.Runtime": "4.0.20-beta-23019",
+          "System.Runtime.Extensions": "4.0.10-beta-23019",
+          "System.Runtime.InteropServices": "4.0.20-beta-23019"
+        },
+        "compile": {
+          "lib/dotnet/Microsoft.Framework.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/Microsoft.Framework.Logging.Abstractions.dll": {}
+        }
+      },
       "Microsoft.Net.Http.Headers/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -13698,6 +14118,52 @@
         },
         "runtime": {
           "lib/dotnet5.4/Microsoft.Net.Http.Headers.dll": {}
+        }
+      },
+      "Microsoft.Net.Http.Server/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta5",
+          "Microsoft.Net.WebSockets": "1.0.0-beta5",
+          "Microsoft.Win32.Primitives": "4.0.0-beta-23019",
+          "System.Diagnostics.Debug": "4.0.10-beta-23019",
+          "System.IO.FileSystem": "4.0.0-beta-23019",
+          "System.Security.Claims": "4.0.0-beta-23019",
+          "System.Security.Cryptography.X509Certificates": "4.0.0-beta-23019",
+          "System.Security.Principal.Windows": "4.0.0-beta-23019",
+          "System.Threading.Overlapped": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.Net.Http.Server.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.Net.Http.Server.dll": {}
+        }
+      },
+      "Microsoft.Net.WebSockets/1.0.0-beta5": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10-beta-23019",
+          "System.Diagnostics.Contracts": "4.0.0-beta-23019",
+          "System.Diagnostics.Tools": "4.0.0-beta-23019",
+          "System.IO": "4.0.10-beta-23019",
+          "System.Linq": "4.0.0-beta-23019",
+          "System.Net.Primitives": "4.0.10-beta-23019",
+          "System.Net.WebSockets": "4.0.0-beta-23019",
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime.Extensions": "4.0.10-beta-23019",
+          "System.Security.Cryptography.Hashing.Algorithms": "4.0.0-beta-23019",
+          "System.Text.Encoding.Extensions": "4.0.10-beta-23019",
+          "System.Threading": "4.0.10-beta-23019",
+          "System.Threading.Tasks": "4.0.10-beta-23019",
+          "System.Threading.ThreadPool": "4.0.10-beta-23019",
+          "System.Threading.Timer": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "lib/dnxcore50/Microsoft.Net.WebSockets.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Microsoft.Net.WebSockets.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.BrowserLink.Loader/14.0.0-rc1-final": {
@@ -15087,6 +15553,53 @@
           "ref/dotnet5.1/System.Security.Cryptography.Encoding.dll": {}
         }
       },
+      "System.Security.Cryptography.Encryption/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.Globalization": "4.0.0-beta-23019",
+          "System.IO": "4.0.0-beta-23019",
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.0-beta-23019",
+          "System.Threading.Tasks": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Security.Cryptography.Encryption.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Security.Cryptography.Encryption.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Hashing/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.0.0-beta-23019",
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Security.Cryptography.Hashing.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Security.Cryptography.Hashing.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Hashing.Algorithms/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.0-beta-23019",
+          "System.Runtime.InteropServices": "4.0.0-beta-23019",
+          "System.Security.Cryptography.Encryption": "4.0.0-beta-23019",
+          "System.Security.Cryptography.Hashing": "4.0.0-beta-23019",
+          "System.Security.Cryptography.RandomNumberGenerator": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Security.Cryptography.Hashing.Algorithms.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Security.Cryptography.Hashing.Algorithms.dll": {}
+        }
+      },
       "System.Security.Cryptography.Primitives/4.0.0-beta-23516": {
         "type": "package",
         "dependencies": {
@@ -15103,6 +15616,21 @@
         },
         "runtime": {
           "lib/dotnet5.4/System.Security.Cryptography.Primitives.dll": {}
+        }
+      },
+      "System.Security.Cryptography.RandomNumberGenerator/4.0.0-beta-23019": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.0-beta-23019",
+          "System.Runtime.InteropServices": "4.0.0-beta-23019",
+          "System.Security.Cryptography.Encryption": "4.0.0-beta-23019"
+        },
+        "compile": {
+          "ref/dotnet/System.Security.Cryptography.RandomNumberGenerator.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Security.Cryptography.RandomNumberGenerator.dll": {}
         }
       },
       "System.Security.Cryptography.X509Certificates/4.0.0-beta-23516": {
@@ -16795,6 +17323,22 @@
         "Microsoft.Extensions.WebEncoders.Core.nuspec"
       ]
     },
+    "Microsoft.Framework.Logging.Abstractions/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "roTRT5h5eSEIS1on9K4M+IhI/YD1vXDpslXXebmxWqRN+9TbAd2xc/j5KgAOZd0hBem1R5rPiiBkBnNa+FSeBA==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Logging.Abstractions.dll",
+        "lib/dnx451/Microsoft.Framework.Logging.Abstractions.xml",
+        "lib/dotnet/Microsoft.Framework.Logging.Abstractions.dll",
+        "lib/dotnet/Microsoft.Framework.Logging.Abstractions.xml",
+        "lib/net45/Microsoft.Framework.Logging.Abstractions.dll",
+        "lib/net45/Microsoft.Framework.Logging.Abstractions.xml",
+        "Microsoft.Framework.Logging.Abstractions.1.0.0-beta5.nupkg",
+        "Microsoft.Framework.Logging.Abstractions.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Framework.Logging.Abstractions.nuspec"
+      ]
+    },
     "Microsoft.Net.Http.Headers/1.0.0-rc1-final": {
       "type": "package",
       "serviceable": true,
@@ -16807,6 +17351,36 @@
         "Microsoft.Net.Http.Headers.1.0.0-rc1-final.nupkg",
         "Microsoft.Net.Http.Headers.1.0.0-rc1-final.nupkg.sha512",
         "Microsoft.Net.Http.Headers.nuspec"
+      ]
+    },
+    "Microsoft.Net.Http.Server/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "U7qFSAMeZRIs9tR//2rnXdHnb9OI/+v1WxU1Ql/HSMQ2o/+6DV3YMOxmoe4yDi9PwFav6CiclCD9Odp99s3oMQ==",
+      "files": [
+        "lib/dnx451/Microsoft.Net.Http.Server.dll",
+        "lib/dnx451/Microsoft.Net.Http.Server.xml",
+        "lib/dnxcore50/Microsoft.Net.Http.Server.dll",
+        "lib/dnxcore50/Microsoft.Net.Http.Server.xml",
+        "lib/net45/Microsoft.Net.Http.Server.dll",
+        "lib/net45/Microsoft.Net.Http.Server.xml",
+        "Microsoft.Net.Http.Server.1.0.0-beta5.nupkg",
+        "Microsoft.Net.Http.Server.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Net.Http.Server.nuspec"
+      ]
+    },
+    "Microsoft.Net.WebSockets/1.0.0-beta5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "q2w6//6WLVteA99pdYZZuSdALASwIjKjH8mOIJEpqSt2lStDi3O+ppiEqLfrlr0Am2ACYFar8Sz5J87PM53Q9A==",
+      "files": [
+        "lib/dnxcore50/Microsoft.Net.WebSockets.dll",
+        "lib/dnxcore50/Microsoft.Net.WebSockets.xml",
+        "lib/net45/Microsoft.Net.WebSockets.dll",
+        "lib/net45/Microsoft.Net.WebSockets.xml",
+        "Microsoft.Net.WebSockets.1.0.0-beta5.nupkg",
+        "Microsoft.Net.WebSockets.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.Net.WebSockets.nuspec"
       ]
     },
     "Microsoft.VisualStudio.Web.BrowserLink.Loader/14.0.0-rc1-final": {
@@ -20278,6 +20852,45 @@
         "System.Security.Cryptography.Encoding.nuspec"
       ]
     },
+    "System.Security.Cryptography.Encryption/4.0.0-beta-23019": {
+      "type": "package",
+      "sha512": "k1qVkHa1F/aDLAvE0FBiAxkWzbkDj5s/tTVKqsxUzzWGEymamwAmSsNHEshEFEu0nZ9HaK6j0qawo9+vbcIn4A==",
+      "files": [
+        "lib/DNXCore50/System.Security.Cryptography.Encryption.dll",
+        "lib/net46/System.Security.Cryptography.Encryption.dll",
+        "ref/dotnet/System.Security.Cryptography.Encryption.dll",
+        "ref/net46/System.Security.Cryptography.Encryption.dll",
+        "System.Security.Cryptography.Encryption.4.0.0-beta-23019.nupkg",
+        "System.Security.Cryptography.Encryption.4.0.0-beta-23019.nupkg.sha512",
+        "System.Security.Cryptography.Encryption.nuspec"
+      ]
+    },
+    "System.Security.Cryptography.Hashing/4.0.0-beta-23019": {
+      "type": "package",
+      "sha512": "HcgfZTWD/O20BV/3XcmefWd9r6Gc7aLfhDyReAC1TS/gLcdPIxHGZp0Px31C7vNBrc+N7GVvIZWuM41N2I/FpQ==",
+      "files": [
+        "lib/DNXCore50/System.Security.Cryptography.Hashing.dll",
+        "lib/net46/System.Security.Cryptography.Hashing.dll",
+        "ref/dotnet/System.Security.Cryptography.Hashing.dll",
+        "ref/net46/System.Security.Cryptography.Hashing.dll",
+        "System.Security.Cryptography.Hashing.4.0.0-beta-23019.nupkg",
+        "System.Security.Cryptography.Hashing.4.0.0-beta-23019.nupkg.sha512",
+        "System.Security.Cryptography.Hashing.nuspec"
+      ]
+    },
+    "System.Security.Cryptography.Hashing.Algorithms/4.0.0-beta-23019": {
+      "type": "package",
+      "sha512": "h/c7c/FadkUQaayln2EAS1ofFnLV8gzVJNFvDKieHCvPWUcuzB0RO0l3k3GB3a2VFDNHwAfHS0MAoXd6+LvlXA==",
+      "files": [
+        "lib/DNXCore50/System.Security.Cryptography.Hashing.Algorithms.dll",
+        "lib/net46/System.Security.Cryptography.Hashing.Algorithms.dll",
+        "ref/dotnet/System.Security.Cryptography.Hashing.Algorithms.dll",
+        "ref/net46/System.Security.Cryptography.Hashing.Algorithms.dll",
+        "System.Security.Cryptography.Hashing.Algorithms.4.0.0-beta-23019.nupkg",
+        "System.Security.Cryptography.Hashing.Algorithms.4.0.0-beta-23019.nupkg.sha512",
+        "System.Security.Cryptography.Hashing.Algorithms.nuspec"
+      ]
+    },
     "System.Security.Cryptography.Primitives/4.0.0-beta-23516": {
       "type": "package",
       "serviceable": true,
@@ -20298,6 +20911,19 @@
         "System.Security.Cryptography.Primitives.4.0.0-beta-23516.nupkg",
         "System.Security.Cryptography.Primitives.4.0.0-beta-23516.nupkg.sha512",
         "System.Security.Cryptography.Primitives.nuspec"
+      ]
+    },
+    "System.Security.Cryptography.RandomNumberGenerator/4.0.0-beta-23019": {
+      "type": "package",
+      "sha512": "KXvjni07Ms4MQ6B9jE6OxNce2bjkC7E7E5OMKQL0LckbCZFnI1JP1iMUhtBZ3VANB0QBuTVgDYoCiNswRlic+g==",
+      "files": [
+        "lib/DNXCore50/System.Security.Cryptography.RandomNumberGenerator.dll",
+        "lib/net46/System.Security.Cryptography.RandomNumberGenerator.dll",
+        "ref/dotnet/System.Security.Cryptography.RandomNumberGenerator.dll",
+        "ref/net46/System.Security.Cryptography.RandomNumberGenerator.dll",
+        "System.Security.Cryptography.RandomNumberGenerator.4.0.0-beta-23019.nupkg",
+        "System.Security.Cryptography.RandomNumberGenerator.4.0.0-beta-23019.nupkg.sha512",
+        "System.Security.Cryptography.RandomNumberGenerator.nuspec"
       ]
     },
     "System.Security.Cryptography.X509Certificates/4.0.0-beta-23516": {
@@ -21163,6 +21789,7 @@
       "Microsoft.Extensions.Logging >= 1.0.0-rc1-final",
       "Microsoft.Extensions.Logging.Console >= 1.0.0-rc1-final",
       "Microsoft.Extensions.Logging.Debug >= 1.0.0-rc1-final",
+      "Microsoft.Net.Http.Server >= 1.0.0-beta5",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-rc1-final"
     ],
     "DNX,Version=v4.5.1": [],
